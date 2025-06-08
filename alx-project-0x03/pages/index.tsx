@@ -1,6 +1,7 @@
 import Button from "@/components/common/Button";
 import Layout from "@/components/layouts/Layout";
 import { useRouter } from "next/router";
+import { PageRouteProps } from "@/interface";
 
 export default function Home() {
   const router = useRouter();
@@ -9,6 +10,9 @@ export default function Home() {
   const routeToNextPage = (pageRoute: string) => {
     router.push(pageRoute, undefined, { shallow: false });
   };
+  const routeToNextPage = ({ pageRoute }: PageRouteProps) => {
+  router.push(pageRoute, undefined, { shallow: false });
+};
 
   return (
     <Layout>
