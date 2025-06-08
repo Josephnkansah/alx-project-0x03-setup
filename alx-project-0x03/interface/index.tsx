@@ -1,4 +1,7 @@
 import { ReactNode } from "react";
+export interface PageRouteProps {
+  pageRoute: string;
+}
 
 export interface ButtonProps {
   buttonLabel: string;
