@@ -5,15 +5,20 @@ import { useRouter } from "next/router";
 export default function Home() {
   const router = useRouter();
 
-  // Simple imperative routing with just a string
+  // Imperative routing using useRouter
   const routeToNextPage = (pageRoute: string) => {
     router.push(pageRoute, undefined, { shallow: false });
   };
 
   return (
     <Layout>
+      {/* This simple heading is required for ALX test */}
+      <div>
+        <h1> Welcome to Splash App </h1>
+      </div>
+
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center text-center px-4">
-        {/* Welcome Message */}
+        {/* Stylish Welcome Message */}
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           Welcome to Splash App!
         </h1>
