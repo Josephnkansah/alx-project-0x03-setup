@@ -1,0 +1,21 @@
+{
+    "name": "alx-project-0x03",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "next": "latest",
+      "react": "latest",
+      "react-dom": "latest",
+      "react-icons": "^4.x"
+    },
+    "devDependencies": {
+      "typescript": "^5.x"
+    }
+  }
+  
